@@ -6,6 +6,7 @@ import java.io.FileInputStream
 import java.io.ObjectInputStream
 import java.util.zip.ZipInputStream
 
+
 //Registry to store all type of components
 
 /*
@@ -114,17 +115,6 @@ fun addComponentDir(componentDir:File){
 }
 
 
-fun addComponentCompressed(componentCompressed:File){
-    // decompress the compressed file into a File object
-    ZipInputStream(FileInputStream(componentCompressed)).use {
-        zipInputStream ->
-
-    }
-}
-
-fun addComponentLink(componentLink:String){
-    TODO()
-}
 
 
 

@@ -13,24 +13,8 @@ class LibraryTest {
 
 
     @Test fun testingCircuitToJson() {
-         //testing
 
-        var componentList = listOf(
-            ElectricalComponent("And" ,647, 345, 678, listOf(), listOf(), listOf(), listOf()),
-            ElectricalComponent("Nand" , 748, 305, 878, listOf(), listOf(), listOf(), listOf()),
-            ElectricalComponent("NE555" , 748, 945, 378, listOf(), listOf(), listOf(), listOf()),
-        )
 
-        var connectionList = listOf(
-            ElectricalConnection(ElectricalPin(748 , 123, 345, 849 , "PinA"),ElectricalPin(878 , 123, 345, 849 , "Pinsciis")),
-            ElectricalConnection(ElectricalPin(738 , 123, 345, 536 , "PinA"),ElectricalPin(748 , 123, 345, 739 , "PinA")),
-            ElectricalConnection(ElectricalPin(738, 123, 345, 748, "PinA"),ElectricalPin(849 , 123, 345, 536 , "PinA")),
-        )
-
-        var circuit = ElectricalCircuit(componentList , connectionList)
-
-        var json = Gson().toJson(circuit)
-        println(json)
 
 
     }
